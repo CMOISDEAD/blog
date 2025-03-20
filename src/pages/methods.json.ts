@@ -9,6 +9,7 @@ export const GET: APIRoute = async () => {
   )[0];
   return new Response(
     JSON.stringify({
+      slug: mostRecentPost.id,
       post: mostRecentPost.data,
     }),
   );
